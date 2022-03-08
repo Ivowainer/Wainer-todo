@@ -1,0 +1,121 @@
+.lContainer{
+    height: 100vh;
+    display:flex;
+    justify-content: space-between;
+}
+/* LOGIN PANEL */
+.loginPanel{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.card{
+    margin-top: 20px;
+    width: 30%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+.card-header{
+    color: rgb(211, 211, 211);
+    padding: 10px;    
+    text-transform: uppercase;
+}
+.loginForm{
+    position:relative;
+    display:flex;
+    flex-direction: column;    
+}
+input::placeholder{
+    color: #fff;
+}
+.loginForm input{
+    margin-top: 10px;
+    padding: 10px;
+    background:none;
+    border:none;
+    color: #fff;
+}
+.loginForm input[type=text], input[type=password]{
+    margin-top: 10px;
+    padding: 10px;
+    background:none;
+    border:none;
+    color: #fff;
+    font-weight: 100;
+    transition: .3s;
+    border-bottom: 1px solid rgba(201, 199, 199, 0.171);
+    
+}
+input[type=text]:focus, input[type=password]:focus{
+    outline: none;
+    transition: .3s;
+    border-bottom: 2px solid #fff;
+}
+input[type=submit]{
+    transition: .3s;
+    width: 30%;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(109, 29, 117, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: 0;
+}
+input[type=submit]:hover{
+    transition: .3s;
+    background: rgba(34, 124, 226, 0.23);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.register{
+    margin-top: 20px;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+}
+.dPanel{
+    display:block;
+    width: 100%;
+}
+.dPanel input{
+    margin-top: 20px;
+    width: 100%;
+}
+.register a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    font-size: 13px;
+}
+/*Media Quer*/
+@media (max-width: 800px) {
+    .card{
+        width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+  }
+
+
+
+
