@@ -1,3 +1,16 @@
+.gContainer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 100px;
+}
+.formTask{
+    border:none;
+    background: none;
+    color: none;
+
+}
 .container{
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
@@ -7,26 +20,7 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-/* Alerta */
-.alerta{
-    padding: 20px;
-    width: 100%;
-    margin-bottom: 40px;
-}
-.error{
-    background: rgba(203, 27, 27, 0.56);
-    border-radius: 7px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(203, 27, 27, 0.3);
-}
-
-
 /*task*/
-.taskContainer{
-    padding: 0 20px;
-}
 .taskHead{
    display:flex;
    justify-content: space-between;
@@ -44,15 +38,8 @@
 
 /*Task Input*/
 .formTask{
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 7px 7px 0 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
 }
 .inputTask:focus{
     outline: none;
@@ -74,17 +61,28 @@
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+.inputId{
+    text-align: center;
+    border-radius: 10px;
+    width: 10%;
+}
+.inputName{
+    text-align: center;
+    width: 30%;
+}
 .buttonLogout{
+    text-align: center;
+    margin: 10px 0 0 0px;
+    text-decoration: none;
     color: #fff;
     border:none;
     padding: 10px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0);
-    border-radius: 30px;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.082);
+    border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
 }

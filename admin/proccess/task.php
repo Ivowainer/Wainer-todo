@@ -9,7 +9,7 @@
             $errores[] = 'The task must have at least 5 characters';
         } */
 
-        if($taskName != ""){
+        if(strlen($taskName) > 5 and strlen($taskName) < 15){
             $insert = mysqli_query($db, "INSERT INTO task (taskName)
             VALUES('$taskName')");  
 
@@ -20,13 +20,7 @@
         }
     }
     $result_tasks = mysqli_query($db, "SELECT * FROM task");
-
-    while($row = mysqli_fetch_array($result_tasks)){?>
-        <div class="task">
-            <p><?php echo $row['id'];?></p>
-            <p><?php echo $row['taskName'];?></p>
-        </div>
-    <?php } mysqli_free_result($result_tasks); ?>
+?>
     
 
     
