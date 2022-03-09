@@ -15,12 +15,10 @@
 </head>
 <body style="height: 100vh; padding: 100px;">
     <div class="container">
-        <?php if(!empty($errores)) :?>
-            <?php foreach($errores as $error){?>
-                <div class="alerta error">
-                    <p><?php echo $error; ?></p>
-                </div>
-            <?php }?>
+        <?php if(isset($_GET['message']) and $_GET['message'] == 'denied') :?>
+            <div class="alerta error">
+                <p>The task must have at least 5 characters</p>
+            </div>
         <?php endif; ?>
         <div class="form">
             <form action="dashboard.php" method="POST">

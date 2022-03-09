@@ -1,8 +1,6 @@
 <?php 
-    //Coneccion base de datos
+    //Conexion base de datos
     $db = mysqli_connect('localhost', 'root', '', 'dashboard_crud');
-
-    $taskName = '';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $taskName = $_POST['taskName'];
@@ -12,12 +10,13 @@
         } */
 
         if($taskName != ""){
-            $bd = mysqli_connect('localhost', 'root', '', 'dashboard_crud');
-
-            $insert = mysqli_query($bd, "INSERT INTO task (taskName)
+            $insert = mysqli_query($db, "INSERT INTO task (taskName)
             VALUES('$taskName')");  
 
-            mysqli_close($bd);
+            header('Location: dashboard.php?message=success');
+        }else{
+            header('Location: dashboard.php?message=denied');
+            mysqli_close($db);
         }
     }
     $result_tasks = mysqli_query($db, "SELECT * FROM task");
