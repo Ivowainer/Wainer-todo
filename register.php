@@ -11,6 +11,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/general.css">
     <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="lContainer">
@@ -31,10 +32,15 @@
                         <p>Dashboard CRUD</p>
                     </div>
                     <div class="card-body">
-                        <form action="register.php" method="POST" class="loginForm">
+                        <form action="register.php" method="POST" enctype="multipart/form-data" class="loginForm">
                             <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" >
-
                             <input type="password" name="password" placeholder="Password">
+
+                            <div class="uplAvatar">
+                                <label for="fileAvatar" class="uplAvatarLabel">Select an avatar</label>
+                                <input type="file" name="fileAvatar"  accept=".png, .jpg">
+                            </div>
+                            
                             <div class="dPanel">
                                 <input type="submit" value="Register">
                             </div>

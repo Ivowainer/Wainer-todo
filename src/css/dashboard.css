@@ -1,3 +1,7 @@
+.gContainer{
+    margin: 100px;
+}
+
 .container{
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
@@ -6,6 +10,32 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* NAV */
+nav{
+    padding: 20px  70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.userPre{
+    text-transform: uppercase;
+    display:flex;
+    align-items: center;
+}
+.userPre img{
+    margin-right: 20px;
+    border-radius: 200px;
+    width: 15%;
+}
+.userPre p{
+    color: #fff;
+
 }
 /* Alerta */
 .alerta{
@@ -28,27 +58,75 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(203, 27, 27, 0.3);
 }
+.done{
+    background: rgba(33, 203, 27, 0.56);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(27, 203, 42, 0.3);
+}
 
 
 /*task*/
 .taskContainer{
-    padding: 0 20px;
+    padding: 0 5px;
 }
 .taskHead{
-    color: rgb(49, 49, 49);
+    background-color: rgba(255, 255, 255, 0.144);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(175, 175, 175, 0.219);
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
     display:flex;
     justify-content: space-between;
 }
 .taskBody{
+    padding-left: 10px;
     color: rgb(49, 49, 49);
     display:flex;
     flex-direction: column;
 }
 .task{
+    margin-top: 20px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     display:flex;
+    text-align: center;
 
+}
+.taskAcciones{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskAcciones a{
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    /* From https://css.glass */
+    background: rgba(43, 169, 209, 0.39);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.062);
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+.taskAcciones a:first-child{
+    margin-bottom: 10px;
+    /* From https://css.glass */
+    background: rgba(209, 43, 185, 0.39);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 100px;
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.062);
 }
 
 /*Task Input*/
@@ -110,12 +188,11 @@
     color: #fff;
     border:none;
     padding: 10px;
-    width: 20%;
+    width: 100px;
     background: rgba(255, 255, 255, 0.082);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
 }

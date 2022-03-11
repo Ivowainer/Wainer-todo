@@ -9,7 +9,7 @@
     if(isset($_POST['taskNameEdit']) and isset($_GET['id'])){
         $taskNameEdit = $_POST['taskNameEdit'];
 
-        if(strlen($taskNameEdit) >= 5 and strlen($taskNameEdit) < 15){
+        if(strlen($taskNameEdit) >= 5 and strlen($taskNameEdit) <= 25){
             $query = mysqli_query($db, "UPDATE task SET taskName = '$taskNameEdit' WHERE id = $id;");
             if($query){
                 header('Location: ../dashboard.php');

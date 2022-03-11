@@ -8,4 +8,5 @@
 body{
     background: rgb(57,0,60);
     background: linear-gradient(4deg, rgba(57,0,60,1) 0%, rgba(121,9,102,1) 23%, rgba(0,212,255,1) 100%);
+    background-size: cover;
 }
