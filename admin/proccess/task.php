@@ -9,7 +9,7 @@
             $errores[] = 'The task must have at least 5 characters';
         } */
 
-        if(strlen($taskName) > 5 and strlen($taskName) < 15){
+        if(strlen($taskName) >= 5 and strlen($taskName) < 15){
             $insert = mysqli_query($db, "INSERT INTO task (taskName)
             VALUES('$taskName')");  
 
