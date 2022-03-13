@@ -89,6 +89,7 @@ nav{
     flex-direction: column;
 }
 .task{
+    color: #fff;
     margin-top: 20px;
     width: 100%;
     justify-content: space-between;
@@ -168,7 +169,6 @@ nav{
 }
 .inputSubmit{
     cursor: pointer;
-    margin-top: 10px;
     color: #fff;
     border:none;
     padding: 10px;
@@ -195,4 +195,41 @@ nav{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:1043px) {
+    .inputTask{
+        width: 70%;
+    }
+    .inputSubmit{
+        width: 20%;
+    }
+}
+@media screen and (max-width:650px) {
+    .inputTask{
+        width: 60%;
+    }
+    .inputSubmit{
+        width: 30%;
+    }
+}
+@media screen and (max-width:523px) {
+    .inputTask{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .inputSubmit{
+        width: 40%;
+    }
+    .formTask{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .gContainer{
+        margin: 40px;
+    }
+    nav{
+        padding: 20px;
+    }
 }
