@@ -10,10 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/general.css">
-    <link rel="stylesheet" href="./src/css/dashboard.css">
+    <link rel="stylesheet" href="./src/css/dashboardd.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
-<body style="height: 100vh;">
+<body>
     <nav>
         <div class="userPre">
             <img src="./uploads/<?php echo $_SESSION['User']['avatar'] ?>" alt="IMG Avatar DashBoard CRUD">

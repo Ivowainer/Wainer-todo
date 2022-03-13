@@ -4,13 +4,14 @@
     require '../admin/databases.php';
     $id = $_GET['id'];
     $taskGet = $_GET['taskName'];
+    $username = $_SESSION['User']['name'];
 
     //Validación si cumple con las caracteristicas
     if(isset($_POST['taskNameEdit']) and isset($_GET['id'])){
         $taskNameEdit = $_POST['taskNameEdit'];
 
         if(strlen($taskNameEdit) >= 5 and strlen($taskNameEdit) <= 25){
-            $query = mysqli_query($db, "UPDATE task SET taskName = '$taskNameEdit' WHERE id = $id;");
+            $query = mysqli_query($db, "UPDATE task$username SET taskName = '$taskNameEdit' WHERE id = $id;");
             if($query){
                 header('Location: ../dashboard.php');
             }
@@ -61,7 +62,7 @@
                     <form class="formTask" method="POST" action="edit.php?id=<?php echo $id ?>">
                         <p class="inputTask inputId"><?php echo $id; ?></p>
                         <input type="submit" value="Submit" class="inputTask inputName"> 
-                        <input type="text" value="<?php echo $taskGet; ?>" class="inputTask inputName" name="taskNameEdit"> 
+                        <input type="text" value="<?php echo $taskGet; ?>" class="inputTask inputName" name="taskNameEdit" autocomplete="off"> 
                     </form>
                     <!-- End Print all task-->
                 </div>

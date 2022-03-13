@@ -44,9 +44,16 @@
             $query = "INSERT INTO users(name, password, avatar)
             VALUES('$username', '$password', '$nombreImagen')";
 
+            //Crea tabla
+            $resultadoTabla = mysqli_query($db, "CREATE TABLE task$username(
+                id INT(15) NOT NULL AUTO_INCREMENT,
+                taskName VARCHAR(15),
+                PRIMARY KEY (id)
+            )");
+
             $resultado = mysqli_query($db, $query);
-            
-            if($resultado){
+
+            if($resultado and $resultadoTabla){
                 header('Location: login.php?result=success');
             }
         }      
