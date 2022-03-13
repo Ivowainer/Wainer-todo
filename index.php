@@ -35,7 +35,7 @@
                         <p>Dashboard CRUD</p>
                     </div>
                     <div class="card-body">
-                        <form action="login.php" method="POST" class="loginForm">
+                        <form action="index.php" method="POST" class="loginForm">
                                 <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" >
 
                                 <input type="password" name="password" placeholder="Password">

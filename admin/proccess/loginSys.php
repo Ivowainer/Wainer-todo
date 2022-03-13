@@ -19,7 +19,7 @@
                 header('Location: dashboard.php');
             }
         }else{
-            header('Location: login.php?result=denied');
+            header('Location: index.php?result=denied');
         }
         
     }

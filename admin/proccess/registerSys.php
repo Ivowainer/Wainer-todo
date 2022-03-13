@@ -54,7 +54,7 @@
             $resultado = mysqli_query($db, $query);
 
             if($resultado and $resultadoTabla){
-                header('Location: login.php?result=success');
+                header('Location: index.php?result=success');
             }
         }      
         
