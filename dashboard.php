@@ -1,13 +1,6 @@
 <?php 
     session_start();
     require './admin/proccess/task.php';
-    $name = $_SESSION['User']['name'];
-    $img = '';
-
-    $queryPrueba = mysqli_query($db, "SELECT name, avatar FROM users");
-    var_dump($queryPrueba);
-    echo $img;
-    echo $name;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,13 +12,11 @@
     <link rel="stylesheet" href="./src/css/general.css">
     <link rel="stylesheet" href="./src/css/dashboard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    
-
 </head>
 <body style="height: 100vh;">
     <nav>
         <div class="userPre">
-            <img src="./src/img/avatar.png" alt="IMG Avatar DashBoard CRUD">
+            <img src="./uploads/<?php echo $_SESSION['User']['avatar'] ?>" alt="IMG Avatar DashBoard CRUD">
             <p><?php  echo $_SESSION['User']['name'];?></p>
         </div>
         <?php if(isset($_SESSION['User'])){?>
