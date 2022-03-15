@@ -14,4 +14,3 @@ You may qualify me to help me⭐️
 
 # You can use the demo :))
 http://wainer-todo.onlinewebshop.net/index.php
-d
