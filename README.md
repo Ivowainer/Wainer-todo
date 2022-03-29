@@ -4,7 +4,7 @@
 
 This is one of my first projects with sessions and login system in PHP and MySQL.
 
-- 📚 It's a basic to-do list for your everyday routine
+- 📚 It's a basic to-do list with sessions for your everyday routine
 - 📝 It is a CRUD, it can be created, read, updated and deleted
 - 📱 Responsive and flexible website
 - 🖥️ With a beautiful dashboard
